@@ -199,8 +199,8 @@ function run(testsRoot, clb): any {
             });
             // Run the tests
 
-            mocha.run((failure) => { 
-                clb(undefined, failure); 
+            mocha.run((failureCount) => { 
+                clb(undefined, failureCount); 
             });
 
         } catch (error) {
